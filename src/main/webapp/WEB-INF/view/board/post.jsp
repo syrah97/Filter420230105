@@ -44,6 +44,11 @@ section{height:600px;width : 95vw;margin-top:10px; }
 
 <section class="container">
 	<div class="msg">${msg}</div>
+	<div>
+		<a href="${pageContext.request.contextPath}/main.do"> <i class="bi bi-house-door" ></i> </a>  
+		> BOARD 
+		> POST
+	</div>
 </section>
 
 

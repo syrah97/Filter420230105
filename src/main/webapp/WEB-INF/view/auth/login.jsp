@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +14,7 @@
 <style>
 .container{width : 300px; margin:100px auto; text-align:center; position:relative;}
 .container *{margin-bottom:10px;}
-.container .msg{ position:absolute;left:0px;right:0px;top:-15px; margin:auto; font-size:0.5rem; color:red; padding-left:15px;}
+.container .msg{ position:absolute;left:0px;right:0px;top:-15px; margin:auto; font-size:0.5rem; color:gray; padding-left:15px;}
 </style>
 
 
@@ -25,14 +25,17 @@
 	<h1>LOGIN</h1>
 	<form name="loginfrm" action="${pageContext.request.contextPath}/auth/login.do" method="post">
 		<input type="text" name="email" placeholder="example@example.com" class="form-control" />
-		<input type="text" name="pwd"  placeholder="Insert Password" class="form-control" />
-		
+		<input type="password" name="pwd"  placeholder="Insert Password" class="form-control" />
+	
 		<button class="btn btn-primary w-100">로그인</button>
-		<a class="btn btn-secondary  w-100">카카오로그인</a>
+		<a class="w-100 btn btn-secondary">카카오로그인</a>
 		<a href="${pageContext.request.contextPath}/member/join.do">회원가입</a>
 		<a href="javascript:void(0)">아이디분실</a>
 		<a href="javascript:void(0)">패스워드분실</a>
 	</form>
 </section>
+
+
+
 </body>
 </html>

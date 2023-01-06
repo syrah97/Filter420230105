@@ -30,6 +30,12 @@ public class forwardloginpageFilter implements Filter{
 		
 		if(session.getAttribute("authdto")==null) //no login
 		{
+			
+			if(request.getRequestURI().contains("/member/join.do")) {
+				req.getRequestDispatcher("/member/join.do").forward(request, response);
+				return ;
+			}
+			
 			String msg="로그인이 필요한 싸이트 입니다.";
 			req.setAttribute("msg",msg);
 			req.getRequestDispatcher("/auth/login.do").forward(request, response);

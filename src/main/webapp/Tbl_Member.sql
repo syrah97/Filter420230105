@@ -7,3 +7,5 @@ CREATE TALBE `shopdb`.`tbl_member`(
 	`addr2` VARCHAR(45) NULL,
 	`grade` VARCHAR(45) NULL,
 	PRIMARY KEY (`email`));
+	
+	
