@@ -29,7 +29,7 @@
 		
 		<button class="btn btn-primary w-100">로그인</button>
 		<a class="btn btn-secondary  w-100">카카오로그인</a>
-		<a href="javascript:void(0)">회원가입</a>
+		<a href="${pageContext.request.contextPath}/member/join.do">회원가입</a>
 		<a href="javascript:void(0)">아이디분실</a>
 		<a href="javascript:void(0)">패스워드분실</a>
 	</form>
